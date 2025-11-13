@@ -4,7 +4,7 @@ $nomPaciente = $_POST['paciente'];
 $nomMedico = $_POST['medico'];
 $fecha = $_POST['fecha'];
 $hora = $_POST['hora']; #Variables del index.html
-$especialidad = $_POST['profecion'];
+$especialidad =$_POST['profecion'];
 echo $nomPaciente, "<br>";
 echo $nomMedico, "<br>";
 echo $fecha, "<br>";
