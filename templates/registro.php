@@ -9,7 +9,7 @@
 <body>
 <center>
     <h1>Agendar cita</h1>
-    <form action="proceso.php" method="post">
+    <form action="../php/proceso.php" method="post">
         <table>
             <tr>
                 <td>Paciente:</td>
