@@ -1,7 +1,7 @@
 <?php
 
 include ("conexion.php");
-$idPaciente = $_GET['ID_Cita'];
+$idPaciente = $_GET['id'];
 $sql = "SELECT * FROM registro WHERE ID_Cita = '$idPaciente'";
 $respuesta = Database::get_rows($sql);
 $paciente = mysqli_fetch_assoc($respuesta);
@@ -20,7 +20,7 @@ $paciente = mysqli_fetch_assoc($respuesta);
   <label>Especialidad medico</label>
   <input type="text" name="EspecialMed" id="EspecialMed" value="<?php echo $paciente["Especialidad_Medico"]?>">
   <br><br>
-  <a href="guardarDatosPaciente.php"><button>Guardar</button></a> 
+  <a href="guardarDatosPaciente.php?id=<?php echo $idPaciente; ?>"><button>Guardar</button></a> 
 </form>
 <a href="../templates/editar.php"><button>Cancelar</button></a>
 

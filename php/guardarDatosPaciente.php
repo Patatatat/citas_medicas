@@ -1,7 +1,7 @@
 <?php
 
 include("conexion.php");
-$idPaciente = $_POST["id"];
+$idPaciente = $_GET['id'];
 $nomPaciente = $_POST["nomPac"];
 $nomMed = $_POST["nomMed"];
 $fecha = $_POST["Fecha"];

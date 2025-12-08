@@ -25,8 +25,8 @@ $respuesta = Database::get_rows($sql);
       <td><?php echo $fila["Hora"];?></td>
       <td><?php echo $fila["Especialidad_Medico"];?></td>
       <td>
-        <a href="../php/editarPaciente.php?id=<?php echo $fila["ID_Cita"]?>"><button>Editar</button></a>
-        <a href="../php/eliminarPaciente.php?id=<?php echo $fila["ID_Cita"]?>"><button>Eliminar</button></a>
+        <a href="../php/editarPaciente.php?id=<?php echo $fila["ID_Cita"];?>"><button>Editar</button></a>
+        <a href="../php/advertencia.php?id=<?php echo $fila["ID_Cita"];?>"><button>Eliminar</button></a>
       </td>
     </tr>
   <?php } ?>
