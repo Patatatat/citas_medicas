@@ -1,6 +1,5 @@
 <?php
 $idPaciente = $_GET['id'];
-echo $idPaciente;
 ?>
 
 <h2>¿Seguro que quiere eliminar este registro?</h2>
